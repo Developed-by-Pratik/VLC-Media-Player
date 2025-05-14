@@ -17,7 +17,7 @@ This project aims to mimic the look and feel of the original VLC Media Player, p
 
 ## 📸 Preview
 
-![VLC Media Player Clone Screenshot](./VLC.png)
+- **Link** : https://developed-by-pratik.github.io/VLC-Media-Player/
 
 ---
 
