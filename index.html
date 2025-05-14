@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VLC Media Player</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Title Bar -->
+      <div class="title_bar">
+        <img src="./VLC.png" alt="VLC_LOGO" />
+        <h1>VLC Media Player</h1>
+      </div>
+
+      <!-- Menu Bar -->
+      <div class="menu_bar">
+        <div class="menu">
+          <div class="menu_item">Media</div>
+          <ul>
+            <li id="open">Open</li>
+            <input type="file" id="fileInput" accept="video/*"/>
+          </ul>
+        </div>
+        <div class="menu">
+          <div class="menu_item">Playback</div>
+          <ul>
+            <li id="speedUp">Speed Up</li>
+            <li id="speedDown">Speed Down</li>
+          </ul>
+        </div>
+        <div class="menu">
+          <div class="menu_item">Audio</div>
+          <ul>
+            <li id="volumeUp">Volume Up</li>
+            <li id="volumeDown">Volume Down</li>
+          </ul>
+        </div>
+        <div class="menu">
+          <div class="menu_item">Video</div>
+          <ul>
+            <li id="fullScreen">Fullscreen</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="screen" id="screen">
+      <img src="./VLC.png" alt="VLC_LOGO" id="main_logo" />
+    </div>
+
+    <div class="toast"></div>
+
+    <!-- Footer -->
+    <footer>
+      <!-- Timeline -->
+      <div class="footer_timeline">
+        <div class="current_time">--/--/--</div>
+        <div class="time_slider">
+          <input type="range" id="slider" class="time_slider" min="0" max="100" value="0" step="0.1">
+        </div>
+        <div class="total_time">--/--/--</div>
+      </div>
+      <!-- Control Buttons -->
+      <div class="footer_btns">
+          <div class="play_pause-container btn" id="playPause">
+            <i class="fas fa-play"></i>
+          </div>
+          <div class="back-btn btn" id="backBtn">
+            <i class="fas fa-backward"></i>
+          </div>
+          <div class="placeholder btn" id="stopBtn">
+            <i class="fas fa-stop"></i>
+          </div>
+          <div class="forward-btn btn" id="forwardBtn">
+            <i class="fas fa-forward"></i>
+          </div>
+          <div class="fullscreen-btn btn" id="fullScreenBtn">
+            <i class="fas fa-expand"></i>
+          </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
